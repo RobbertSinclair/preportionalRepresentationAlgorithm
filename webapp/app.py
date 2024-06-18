@@ -1,7 +1,9 @@
 from flask import Flask, request, Response
 from voting_systems.voting_system import VotingSystems
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, origins=["http://localhost:8080"])
 
 @app.route("/")
 def hello():
@@ -16,6 +18,7 @@ def dhondt_data():
 @app.route("/preportional", methods=["POST"])
 def preportionalRepresentation():
     data = request.get_json()
+    print(data)
     try:
         results = data["results"]
         total_seats = data["total_seats"]

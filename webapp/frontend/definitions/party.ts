@@ -1,4 +1,5 @@
 export type VoteInput = {
+    id: number;
     partyName: string;
     votes: number;
 }
