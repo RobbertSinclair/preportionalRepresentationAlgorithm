@@ -16,3 +16,17 @@ export type PartyInputProps = {
     delete: Function;
     edit: Function;
 }
+
+export type ParliamentResultProps = {
+    parliament: Object;
+    loading: Boolean;
+}
+
+export type ParliamentListProps = {
+    parliament: Object;
+}
+
+export type ParliamentRowProps = {
+    party: String;
+    seats: Number;
+}

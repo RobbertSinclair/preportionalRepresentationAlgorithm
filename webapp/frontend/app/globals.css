@@ -21,3 +21,15 @@
 .btn-blue:hover {
   @apply bg-blue-700;
 }
+
+.table {
+  @apply py-4 px-10 table-auto border-collapse border-spacing-7 w-full; 
+}
+
+.table-header {
+  @apply p-3 text-3xl;
+}
+
+.table-item {
+  @apply px-3 py-1 text-3xl;
+}
