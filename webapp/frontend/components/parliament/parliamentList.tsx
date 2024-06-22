@@ -10,8 +10,8 @@ export default function ParliamentList(props: ParliamentListProps) {
         <table className="table">
             <tbody>
                 <tr>
-                    <th className="w-1/2"><h1 className="table-header text-center">Party</h1></th>
-                    <th className="w-1/2"><h1 className="table-header text-center">Seats</h1></th>
+                    <th className="w-1/2"><h3 className="table-header text-center">Party</h3></th>
+                    <th className="w-1/2"><h3 className="table-header text-center">Seats</h3></th>
                 </tr>
                 {results}
             </tbody>

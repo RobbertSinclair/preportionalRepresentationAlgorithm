@@ -6,8 +6,8 @@ import ParliamentBarChart from "./parliament/parliamentBarChart";
 export default function ParliamentResult(props: ParliamentResultProps) {
 
     return (
-        <div className="flex flex-row">
-            <div className="w-1/2">
+        <div className="row">
+            <div className="col-5">
                 {props.loading ? <Loading /> : <ParliamentList parliament={props.parliament} />}
             </div>
             {!props.loading && <ParliamentBarChart parliament={props.parliament} />}

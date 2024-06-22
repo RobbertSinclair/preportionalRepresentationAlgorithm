@@ -1,8 +1,10 @@
 export default function Loading() {
 
     return (
-        <div className="flex items-center justify-center h-96">
-            <h1 className="text-4xl font-bond">LOADING</h1>
+        <div className="d-flex justify-content-center">
+            <div className="spinner-border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </div>
         </div>
     );
 

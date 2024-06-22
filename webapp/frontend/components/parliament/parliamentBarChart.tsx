@@ -26,7 +26,7 @@ export default function ParliamentBarChart(props: ParliamentListProps) {
     }
 
     return (
-            <div className="w-1/2">
+            <div className="col-7">
                 <Bar data={data} options={options} />
             </div>
         )
